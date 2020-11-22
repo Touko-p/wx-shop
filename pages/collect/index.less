@@ -1,0 +1,54 @@
+/* pages/collect/index.wxss */
+page{
+    
+}
+.collect_main{
+    .collect_title{
+        padding: 40rpx 0;
+        background: #f3f4f5;
+        .collect_tips{
+            padding: 15rpx;
+            border: 1rpx solid #ccc;
+            margin-left: 25rpx;
+            background: #fff;
+        }
+        .active{
+            color: var(--themeColor);
+            border-color: currentColor;
+        }
+    }
+    .collect_content{
+        .goods_item{
+            display: flex;
+            border-bottom: 2rpx solid #cccccc;
+            .goods_img_wrap{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 70%; 
+                }
+            }
+            .goods_info_wrap{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .goods_name{
+                    text-overflow: -o-ellipsis-lastline;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                .goods_price{
+                    color: var(--themeColor);
+                    font-size: 32rpx;
+                }
+            }
+        }
+    }
+}
